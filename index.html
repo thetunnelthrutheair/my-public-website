@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Website</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid;
+      place-items: center; padding: 24px;
+      font: 16px/1.6 system-ui, sans-serif;
+      color: #172033;
+      background: linear-gradient(135deg,#e0e7ff,#f8fafc);
+    }
+    main {
+      width: min(100%,520px); padding: 36px 28px;
+      text-align: center; background: white;
+      border-radius: 24px;
+      box-shadow: 0 18px 60px #17203318;
+    }
+    h1 { color: #4f46e5; }
+    button {
+      border: 0; border-radius: 12px; padding: 13px 22px;
+      background: #4f46e5; color: white;
+      font-size: 16px; cursor: pointer;
+    }
+    #message { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hello, world! 🌍</h1>
+    <p>My website is running on my own laptop.</p>
+    <p id="message">Successfully loaded.</p>
+    <button onclick="document.getElementById('message').textContent =
+      'Button works! Website is live.'">Test website</button>
+  </main>
+</body>
+</html>
